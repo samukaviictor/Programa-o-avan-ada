@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int soma  (int a, int b)
+{
+    return a+b;
+
+}
+int subtracao (int a, int b)
+{
+    return a - b;
+}
+int prod (int a, int b)
+{
+    return a * b;
+    
+}
+int divisao (int a, int b)
+{
+    return a / b;
+    
+}
+int resto (int a, int b)
+{
+    return b % a;
+}
+int main()
+{
+    int a =22, b=223;
+    
+    // Saída 
+    printf ("Soma = %d" , soma (a,b));
+    printf ("\nsubtracao = %d", subtracao(a,b));
+    printf ("\nprod = %d", prod(a,b));
+    printf ("\ndivisao = %d", divisao(a,b));
+    printf ("\nresto = %d", resto(a,b));
+    return 0;
+    
+   }
+
+}
