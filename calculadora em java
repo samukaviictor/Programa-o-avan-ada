@@ -1,0 +1,40 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int a =10, b=2;
+		System.out.println("Soma=" + soma(a,b));
+	    System.out.println("subtracao=" + subtracao(a,b));
+        System.out.println("prod=" + prod(a,b));
+        System.out.println("divisao=" + divisao(a,b));
+        System.out.println("resto=" + resto(a,b));
+    
+	}
+    
+    public static int soma(int a, int b) {
+        return a + b; 
+    }
+
+public static int subtracao (int a, int b)
+{
+    return a - b;
+}
+public static int prod (int a, int b)
+{
+    return a * b;
+    
+}
+public static int divisao (int a, int b)
+{
+   
+    return b / a;
+     
+}
+public static int resto (int a, int b)
+{
+   
+         return b % a;
+     }
+     
+}   
+
+
