@@ -1,0 +1,24 @@
+/*
+   TESTANDO STRING 
+   Uma expressão matemática pode ser escrita de mais de uma forma:
+       3+4 = notação infixada (operação entre os operandos)
+       34+ = notação POSfixada (operação DEPOIS dos operandos)
+       
+       O exemplo abaixo define uma expressão posfixada e mostra cada parte dela.
+       Note o uso do método charAt.
+*/   
+
+public class Main
+{
+	public static void main(String[] args) {
+
+		String expressao="34+";
+		char aux;
+		
+		for (int i=0; i< expressao.length(); i++)  {
+		    aux = expressao.charAt(i);
+		    System.out.println (aux);
+		}
+	}
+
+
