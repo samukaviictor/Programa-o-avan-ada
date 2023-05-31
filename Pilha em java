@@ -1,0 +1,67 @@
+public class Main
+{
+	public static void main(String[] args) {
+		// Criar uma pilha p - chamando o CONSTRUTOR
+		TADPilha p = new TADPilha (100);
+		
+		int n=10, resto;
+		
+		while (n != 0 ) {
+		    resto = n%2;       // 0-1-0-1
+		    p.empilha (resto); // 0-1-0-1
+            n = n /2 ;         // 5-2-1-0
+		}
+		System.out.println ("Ao contrario");
+		p.mostraAoContrario();
+		//System.out.println ("Normal");
+		//p.mostra();
+		System.out.println ("A pilha p tem " + 
+		                    p.conta() + " elementos");
+	}
+}
+
+public class TADPilha {
+    // atributos
+    int dados[];
+    int topo;
+    int capacidade;
+    
+    // Construtor 
+    public TADPilha (int c) {
+       capacidade = c;
+       topo = -1;
+       dados = new int [capacidade];
+    }
+
+    // métodos
+    public boolean empilha(int x) {
+        if (!cheia()) {
+           topo++;  // topo = topo + 1;
+           dados[topo] = x;
+           return true;
+        }
+        System.out.print ("cheia !");
+        return false;
+    }
+
+    public void mostraAoContrario () {
+       for (int i=topo; i>=0; i--) 
+           System.out.println (dados[i]);    
+    } 
+    public void mostra () {
+       for (int i=0; i<=topo; i++) 
+           System.out.println (dados[i]);    
+    } 
+    
+    public boolean cheia() {
+        return (topo==capacidade-1);
+    }
+    public boolean vazia() {
+        return (topo==-1);
+    }
+    public int conta () {
+        return topo+1;
+    }
+       
+ }
+
